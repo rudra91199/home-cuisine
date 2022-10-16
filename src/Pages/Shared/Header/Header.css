@@ -1,0 +1,105 @@
+/* #86BC42 */
+.navs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+}
+
+.header-bg{
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.nav-scroll{
+    margin-top: 0 !important;
+}
+.nav-link {
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ac-nav{
+    color: red !important;
+}
+
+
+.login-nav, .service-nav, .home-nav, .food-nav, .blog-nav, .about-nav {
+    position: relative;
+    color: #86BC42 !important;
+
+}
+
+.login-nav::after, .service-nav::after, .home-nav::after, .food-nav::after, .blog-nav::after, .about-nav::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #86BC42;
+    top: 26px;
+    left: 0;
+    border-radius: 2px;
+}
+
+.home-nav::after {
+    animation: homeUnderline 0.2s ease-in forwards;
+}
+
+.service-nav::after {
+    animation: servicesUnderline 0.2s ease-in forwards;
+
+}
+
+.food-nav::after, .about-nav::after {
+    animation: foodUnderline 0.2s ease-in forwards;
+
+}
+
+.blog-nav::after,.login-nav::after {
+    animation: blogUnderline 0.2s ease-in-out forwards;
+}
+
+
+@keyframes homeUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50px;
+    }
+}
+
+@keyframes servicesUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes foodUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 53px;
+    }
+}
+@keyframes blogUnderline {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 48px;
+    }
+}
