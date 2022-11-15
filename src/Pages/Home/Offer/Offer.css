@@ -1,3 +1,84 @@
-.offer{
-    height: 100vh;
+.offers {
+    height: 80vh;
+    background: url("../../../images/alwaysfresh.jpg");
+    background-size: 140%;
+    background-repeat: no-repeat;
+    padding: 70px 0px 0px 0px;
+}
+
+.offers h2 {
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #555555;
+}
+
+.offer-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(173, 173, 173);
+    font-size: 16px;
+    gap: 10px;
+}
+
+.offer-style span {
+    width: 120px;
+    height: 1px;
+    background-color: rgb(173, 173, 173);
+}
+
+.offered {
+    display: flex;
+    justify-content: center;
+    padding: 10px 290px;
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+
+}
+
+.offered >div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offered img {
+    width:100%;
+    height: 300px;
+    border-radius: 50%;
+    transition: scale 0.3s ease-in-out;
+}
+
+.offered-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.offered img:hover {
+    scale: 1.1;
+}
+
+.offered .title {
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.span-title {
+    font-size: 42px;
+    font-weight: normal;
+    color: rgb(97, 97, 97);
+}
+
+.offered p {
+    width: 55%;
+    font-size: 18px;
+    color: gray;
 }

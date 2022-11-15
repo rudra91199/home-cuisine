@@ -1,22 +1,49 @@
 /* #86BC42 */
 .navs {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
     z-index: 1;
     width: 100%;
     position: sticky;
     top: 0px;
     padding: 10px 0px;
+    transition: padding 0.2s ease-in-out,background-color 0.2s ease-in-out;
 }
 
 .header-bg{
-    background-color: rgba(0, 0, 0, 0.911);
+    background-color:rgba(0, 0, 0, 0.918);
 }
 
 .nav-scroll{
     margin-top: 0 !important;
+    padding: 15px 0;
+    padding-top: 5px;
 }
+
+.nav-scroll .nav-link{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.nav-header{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Jost', sans-serif !important;
+    font-size: 24px;
+}
+
+.nav-header span{
+    color:  #86BC42;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-family: 'Jost', sans-serif !important;
+}
+
+
 .nav-link {
     text-decoration: none;
     color: rgb(228, 228, 228);

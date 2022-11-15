@@ -8,7 +8,6 @@ const Banner = () => {
         <div className='banner'>
             <p>High Quality</p>
             <h2>Healthy Food <br /> Healthy Life</h2>
-
             <button onClick={()=>navigate("foods")}>See Our Foods</button>
         </div>
     );

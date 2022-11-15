@@ -15,15 +15,16 @@
     color: white;
     transform: translate();
     text-align: center;
-    font-size: 80px;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 100px;
+    font-family: 'Cormorant Garamond', serif;
+
 }
 
 .banner p{
     font-size: 44px;
     text-align: center;
     font-weight: 600;
-    color: #BDD630;
+    color: #dbfc6d;
     font-family: 'Sacramento', cursive;
     margin-bottom: 20px;
 }
@@ -33,17 +34,37 @@
     font-size: 18px;
     font-weight: 600;
     padding: 15px 15px;
-    background-color: #BDD630;
-    color: white;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out,padding 0.3s ease-in-out;
+    border: 2px solid #86BC42;
+    background-color: transparent;
+    color: #dbfc6d;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+
 }
 
 .banner button:hover{
-    background-color:#86BC42;
-    padding: 15px 20px;
+    color: white;
+}
+
+.banner button::after{
+    content: '';
+    width: 0px;
+    background-color: #86BC42;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+  height: 52px;
+  transition: width 0.3s ease-in-out;
 
 }
+
+.banner button:hover::after{
+  width: 100%;
+}
+
 
 .banner button:active{
     background-color:#86BC42;

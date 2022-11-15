@@ -1,0 +1,51 @@
+[
+    {
+    "title": "Daily Menu",
+    "price": "10$",
+    "duration": "per day",
+    "feature1" : "Breakfast (One menu)",
+    "feature2" : "Lunch (One menu)",
+    "feature3" : "Dinner (One menu)"
+},
+{
+    "title": "Weekly Menu",
+    "price": "50$",
+    "duration": "per week",
+    "feature1" : "Breakfast (One menu)",
+    "feature2" : "Lunch (One menu,one dessert)",
+    "feature3" : "Dinner (One menu,one dessert)"
+},
+{
+    "title": "Monthly Menu",
+    "price": "250$",
+    "duration": "per month",
+    "feature1" : "Breakfast (Two menu)",
+    "feature2" : "Lunch (One menu,Two dessert)",
+    "feature3" : "Dinner (One menu,Two dessert)"
+},
+{
+    "title": "Birthday Menu",
+    "price": "15$",
+    "duration": "per person",
+    "feature1" : "Two Starters",
+    "feature2" : "Main Courses",
+    "feature3" : "One Dessert"
+},
+{
+    "title": "Corporate Menu",
+    "price": "20$",
+    "duration": "per person",
+    "feature1" : "Two Starters",
+    "feature2" : "Main Courses",
+    "feature3" : "Two Desserts"
+},
+{
+    "title": "Event Menu",
+    "price": "15$",
+    "duration": "per person",
+    "feature1" : "One Starter",
+    "feature2" : "Main Courses",
+    "feature3" : "One Dessert"
+}
+
+]

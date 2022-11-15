@@ -6,6 +6,7 @@ import Login from './Pages/Login/Login/Login';
 import Home from './Pages/Home/Home/Home';
 import HeaderLogo from './Pages/Shared/HeaderLogo/HeaderLogo';
 import Foods from './Pages/Foods/Foods';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/foods' element={<Foods />} />
         <Route path='/login' element={<Login />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

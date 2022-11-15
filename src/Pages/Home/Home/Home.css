@@ -1,0 +1,24 @@
+.homeService-container{
+    height: 70vh;
+    background: url(../../../images/service-bg.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.homeService-container h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 56px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #333333;
+    margin-bottom: 80px;
+}
+
+.homeService {
+    display: grid;
+    grid-template-columns:repeat(3,1fr );
+    padding: 0 450px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+}

@@ -1,0 +1,79 @@
+.service {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.service h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.service p b {
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #94d446;
+}
+
+.service p small {
+    font-size: 22px;
+}
+
+.featured-div {
+    margin: 30px 30px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service li {
+    text-align: left;
+    list-style: none;
+}
+
+.service button{
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 8px 20px;
+    font-weight: 600;
+    border: 2px solid #86BC42;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.808);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.service button:hover{
+    color: white;
+}
+
+.service button::after{
+    content: '';
+    width: 0px;
+    background-color: #86BC42;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    height: 35px;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.service button:hover::after{
+  width: 100%;
+}
+
+
+.service button:active{
+    background-color:#86BC42;
+}
