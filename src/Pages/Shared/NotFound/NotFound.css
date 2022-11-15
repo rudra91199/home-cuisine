@@ -1,0 +1,66 @@
+.not-found{
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif !important;
+}
+
+.not-found img{
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+}
+
+.not-found div{
+    background-color: #000000df;
+    margin-top: -50px;
+    padding: 35px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.not-found h2 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.not-found a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border: 2px solid #86BC42;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+.not-found a::after {
+    content: '';
+    width: 0px;
+    background-color: #86BC42;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    height: 36px;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.not-found a:hover::after {
+    width: 100%;
+}
+
+
+.not-found a:active {
+    background-color: #000000;
+    z-index: 3;
+}
