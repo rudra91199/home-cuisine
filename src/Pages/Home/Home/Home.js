@@ -4,12 +4,15 @@ import Service from '../../Shared/Service/Service';
 import Banner from '../Banner/Banner';
 import Offer from '../Offer/Offer';
 import './Home.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './../../../firebase.init';
 
 
 const Home = () => {
     const services = useServices()
 
-    console.log(services);
+    const [user]= useAuthState(auth)
+    console.log(user);
 
     return (
         <div className='home'>

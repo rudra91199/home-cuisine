@@ -1,8 +1,7 @@
-.banner{
+.banner {
     background-image: url(../../../images/banner1.jpg);
     background-size: cover;
     height: 100vh;
-    margin-top: -175px;
     width: 100%;
     z-index: -1;
     display: flex;
@@ -11,7 +10,7 @@
     flex-direction: column;
 }
 
-.banner h2{
+.banner h2 {
     color: white;
     transform: translate();
     text-align: center;
@@ -20,7 +19,7 @@
 
 }
 
-.banner p{
+.banner p {
     font-size: 44px;
     text-align: center;
     font-weight: 600;
@@ -29,7 +28,7 @@
     margin-bottom: 20px;
 }
 
-.banner button{
+.banner button {
     margin-top: 40px;
     font-size: 18px;
     font-weight: 600;
@@ -44,11 +43,11 @@
 
 }
 
-.banner button:hover{
+.banner button:hover {
     color: white;
 }
 
-.banner button::after{
+.banner button::after {
     content: '';
     width: 0px;
     background-color: #86BC42;
@@ -56,16 +55,26 @@
     left: 0;
     z-index: -1;
     top: 0;
-  height: 52px;
-  transition: width 0.3s ease-in-out;
+    height: 52px;
+    transition: width 0.3s ease-in-out;
 
 }
 
-.banner button:hover::after{
-  width: 100%;
+.banner button:hover::after {
+    width: 100%;
 }
 
 
-.banner button:active{
-    background-color:#86BC42;
+.banner button:active {
+    background-color: #86BC42;
+}
+
+@media screen and (max-width:700px) {
+    .banner {
+        margin-top: 0px;
+    }
+
+    .banner h2 {
+        font-size: 60px;
+    }
 }

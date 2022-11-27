@@ -1,9 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Banner.css'
 
 const Banner = () => {
     const navigate= useNavigate();
+    const location= useLocation();
     return (
         <div className='banner'>
             <p>High Quality</p>

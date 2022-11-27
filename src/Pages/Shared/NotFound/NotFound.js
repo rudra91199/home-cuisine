@@ -9,7 +9,7 @@ const NotFound = () => {
                 <img src={notFound} alt="" />
             <div>
                 <h2>The page you are looking for can't be found.</h2>
-                <Link to={'/'}>Go Back </Link>
+                <Link to={'/'}>Go Home</Link>
             </div>
         </div>
     );

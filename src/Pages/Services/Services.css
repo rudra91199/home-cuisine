@@ -1,0 +1,57 @@
+.services{
+    background-color: rgba(255, 255, 255, 0.253);
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.services .service{
+    background-color: rgba(0, 0, 0, 0.116);
+    color: black;
+    font-weight: 600;
+    transition: background-color 300ms ease-in-out,translate 300ms ease-in-out,box-shadow 300ms ease-in-out;
+}
+
+.services .service:hover{
+background-color: rgba(0, 0, 0, 0.904);
+color: rgb(226, 226, 226);
+box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+}
+
+.services .service:hover button{
+    color: rgb(226, 226, 226);
+
+}
+
+.services .service button{
+    color: rgb(0, 0, 0);
+}
+
+.services .service button:hover{
+    color: white;
+}
+
+.services h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 46px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.regular-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding: 40px 300px;
+}
+
+@media screen and (max-width:688px) {
+    .regular-menu{
+        grid-template-columns: repeat(1,1fr );
+        padding: 0;
+        place-items: center;
+    }
+
+    .services h2{
+margin-bottom: 20px;
+    }
+}

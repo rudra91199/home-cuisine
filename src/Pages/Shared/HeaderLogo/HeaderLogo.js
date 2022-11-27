@@ -8,7 +8,7 @@ const HeaderLogo = () => {
     const location = useLocation()
 
     return (
-        <div className={`logo-container ${location.pathname === '/'? '' : 'header-bg'}`}>
+        <div className={`logo-container ${location.pathname === '/'? '' : 'd-none'}`}>
             <img onClick={() => navigate('/')} src={logo} alt="" />
         </div>
     );

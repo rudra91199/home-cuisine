@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className='footer-container'>
             <div className='footer'>
                 <div className='logo'>
-                    <h2 className="nav-header">Restaur<span>a</span> </h2>
+                    <h2 className="nav-header-footer">Restaur<span>a</span> </h2>
                     <p>Catering is not just all about food. It’s about excellent service as well. Great food, great service, anywhere anytime.</p>
                     <div className='social icons'>
                         <i class="fa-brands fa-instagram"></i>

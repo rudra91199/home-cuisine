@@ -5,6 +5,11 @@
     color: white;
     height: 350px;
     border-radius: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+.service:hover{
+    translate: 0 -20px;
 }
 
 .service h3 {
@@ -17,7 +22,7 @@
 .service p b {
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
-    color: #94d446;
+    color: #68a31f;
 }
 
 .service p small {
@@ -40,7 +45,7 @@
 .service button{
     margin-top: 10px;
     font-size: 15px;
-    padding: 8px 20px;
+    padding: 8px 9%;
     font-weight: 600;
     border: 2px solid #86BC42;
     background-color: transparent;
@@ -49,7 +54,6 @@
     position: relative;
     z-index: 2;
     transition: color 0.3s ease-in-out;
-
 }
 
 .service button:hover{
@@ -76,4 +80,11 @@
 
 .service button:active{
     background-color:#86BC42;
+}
+
+@media(max-width:700px){
+    .service {
+        width: 300px;
+    }
+    
 }

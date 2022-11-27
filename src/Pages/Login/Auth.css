@@ -1,0 +1,109 @@
+.login-container, .register-container {
+    height: 83vh;
+    background: url('../../images/loginBg.jpg');
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1297;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-container::after, .register-container::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 83vh;
+    z-index: -1;
+}
+
+.login, .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    background-color: rgba(0, 0, 0, 0.691);
+    width: 450px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: -20px;
+    text-align: center;
+    gap: 20px;
+    font-family: 'Jost', sans-serif !important;
+}
+
+
+.login h2 {
+    background-color: #86BC42;
+    width: 100%;
+    padding: 15px 0;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.login input, .login button {
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 5px;
+    color: rgb(212, 212, 212);
+    font-weight: 400;
+    font-size: large;
+}
+
+.login input:focus {
+    background-color: white;
+    color: black;
+}
+
+.login input::placeholder {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login button {
+    height: 40px;
+    background-color: #86BC42;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.login p {
+    color: white;
+
+}
+
+.login p span, .forgot-password {
+    color: #96d449 !important;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:688px) {
+
+    .login{
+        width: 350px;
+    }
+
+    .login input, .login button {
+        width: 280px;
+        height: 45px;
+    }
+
+    .login button{
+        height: 30px;
+        font-size: 16px;
+    }
+
+}

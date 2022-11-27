@@ -1,10 +1,21 @@
 .logo-container {
     text-align: center;
     height: 130px;
+    position: absolute;
     top: 0;
+    left: 50%;
+    translate: -50% 0;
 }
 
 .logo-container img {
     width: 150px;
     height: 110px;
+}
+
+@media screen and (max-width:688px) {
+    .logo-container{
+        position: absolute;
+        left: 50%;
+        translate: -50% -0%;
+    }
 }
