@@ -1,5 +1,5 @@
-.login-container, .register-container {
-    height: 83vh;
+.login-container, .register-container,.reset-container {
+    height: 90vh;
     background: url('../../images/loginBg.jpg');
     background-attachment: fixed;
     position: relative;
@@ -10,12 +10,12 @@
 
 }
 
-.login-container::after, .register-container::after {
+.login-container::after, .register-container::after,.reset-container::after {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 83vh;
+    height: 90vh;
     z-index: -1;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .login {
-    background-color: rgba(0, 0, 0, 0.691);
+    background-color: rgba(0, 0, 0, 0.904);
     width: 450px;
     height: 400px;
     position: relative;
@@ -35,6 +35,8 @@
     text-align: center;
     gap: 20px;
     font-family: 'Jost', sans-serif !important;
+    transition: all 0.3s ease-in;
+
 }
 
 
@@ -52,7 +54,7 @@
     padding-left: 10px;
     border: none;
     margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.911);
+    background-color: rgb(70, 70, 70);
     border-radius: 5px;
     color: rgb(212, 212, 212);
     font-weight: 400;
@@ -88,12 +90,33 @@
     cursor: pointer;
 }
 
+.reset-container{
+    background-image: url("../../images/resetBg-01.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reset-container .login{
+    height: 280px;
+}
+
+.reset-container .login h4, .reset-container h3{
+    color: white;
+}
+
+.reset-container::after{
+    background-color: rgba(0, 0, 0, 0.301);
+
+}
+
+
 
 
 @media screen and (max-width:688px) {
 
     .login{
         width: 350px;
+        transition: all 0.1s ease-in;
     }
 
     .login input, .login button {
@@ -104,6 +127,18 @@
     .login button{
         height: 30px;
         font-size: 16px;
+    }
+
+    .reset-container{
+        background-image: url("../../images/resetBg-02-01.jpg");
+    }
+
+    .sentReset{
+        height: 200px !important;
+    }
+
+    .sentReset button{
+        margin-top: -20px;
     }
 
 }

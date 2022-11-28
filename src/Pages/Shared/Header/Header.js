@@ -41,7 +41,6 @@ const Header = () => {
                 >
                     <i className={`fa-solid fa-user profile-icon`}></i>
                 </button>
-       
 
             {/* Nav Links  */}
 
